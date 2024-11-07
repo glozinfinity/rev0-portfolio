@@ -231,9 +231,8 @@ Thanks to the open-source community and contributors for helping improve and mai
 [issues-shield]: https://img.shields.io/github/issues/glozinfinity/rev0-portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/glozinfinity/rev0-portfolio/issues
 [license-shield]: https://img.shields.io/github/license/glozinfinity/rev0-portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[license-url]: https://github.com/glozinfinity/rev0-portfolio/blob/master/LICENSE.txt
+
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
