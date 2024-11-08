@@ -119,7 +119,7 @@
    Log in with the following credentials:
 
    - **Email**: uluckydev@gmail.com
-   - **Password**: Darkk7333
+   - **Password**: hHYyYC2yEagLw2F
 
    You can now start editing the template to suit your portfolio needs.
 
