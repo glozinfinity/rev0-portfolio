@@ -195,7 +195,10 @@ Contributions to **rev0 Devfolio Template** are welcome! To contribute:
 <!-- LICENSE -->
 ## License
 
-**rev0 Devfolio Template** is licensed under the GNU General Public License (GPL). This means you are free to use, modify, and distribute this project as long as any derivative works also adopt a GPL-compatible license. However, reselling or redistributing the template as-is is not permitted.
+This project is licensed under the MIT License with additional restrictions:
+
+Resale and Relicensing Restriction: The Software, or any derivative works thereof, may not be sold, relicensed, or rented as a service by any party other than Glozinfinity Technology Private Limited.
+For more details, refer to the LICENSE file included in the repository.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
