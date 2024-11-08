@@ -32,11 +32,11 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
-  db: postgresAdapter({
-    pool: {
-      connectionString: process.env.DATABASE_URI || '',
-    },
-    push: false
+  db: sqliteAdapter({
+    client: {
+      url: process.env.DATABASE_URI!,
+      authToken: process.env.DATABASE_AUTH_TOKEN,
+    }
   }),
   sharp,
   plugins: [
