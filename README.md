@@ -76,6 +76,7 @@
 
 - **SQLite:** Lightweight database for fast and reliable data storage.
 - **Next.js:** Framework for server-rendered React applications.
+- **Prisma:** An open-source next-generation ORM.
 - **React:** JavaScript library for building user interfaces.
 - **Payload CMS:** Integrated CMS solution for managing content seamlessly.
 - **Tailwind CSS:** Utility-first CSS framework for custom styling.
