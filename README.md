@@ -151,7 +151,7 @@ Here's the roadmap section formatted as requested:
 
 - [x] Blog Section
 - [x] Custom Layouts
-- [ ] Technical SEO Implementation
+- [x] Technical SEO Implementation
 - [ ] Add Dark Mode
 - [ ] Add New Blocks
     - [ ] Project Showcase
