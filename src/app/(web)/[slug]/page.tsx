@@ -4,6 +4,7 @@ import configPromise from '@payload-config'
 import { Page as PageType } from '@/payload-types'
 import { notFound } from 'next/navigation'
 import { RenderBlocks } from '@/blocks/RenderBlocks'
+import { TrafficCone } from 'lucide-react'
 
 // export async function generateStaticParams() {
 //   const payload = await getPayloadHMR({ config: configPromise })
@@ -38,7 +39,7 @@ const pageTemplate = async ({ params }: { params: Params }) => {
   return (
     <div className="max-w-screen-sm mx-auto">
       <article className="mt-10">
-        {slug != 'home' && <h1 className="text-2xl tracking-tighter font-semibold px-3 md:px-5">{title}</h1>}
+        {slug != 'home' && <h1 className="text-2xl tracking-tighter font-semibold px-3 md:px-5 flex gap-2 items-center"><TrafficCone />{title}</h1>}
         {layout && <RenderBlocks blocks={layout} />}
       </article>
     </div>
