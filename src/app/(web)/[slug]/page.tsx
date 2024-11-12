@@ -5,7 +5,12 @@ import { Page as PageType } from '@/payload-types'
 import { notFound } from 'next/navigation'
 import { RenderBlocks } from '@/blocks/RenderBlocks'
 import { TrafficCone } from 'lucide-react'
+import { Metadata } from 'next'
 
+
+
+
+type Params = Promise<{ slug: string }>
 // export async function generateStaticParams() {
 //   const payload = await getPayloadHMR({ config: configPromise })
 //   const pages = await payload.find({
@@ -21,7 +26,23 @@ import { TrafficCone } from 'lucide-react'
 //     .map(({ slug }) => slug)
 // }
 
-type Params = Promise<{ slug: string }>
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  let page: PageType | null
+  let slug = 'home'
+  const parameter = await params
+  if (parameter.slug) slug = parameter.slug
+
+  page = await queryPageBySlug({
+    slug,
+  })
+
+  return {
+    title: page.meta?.title,
+    description: page.meta?.description,
+  }
+}
+
+
 
 const pageTemplate = async ({ params }: { params: Params }) => {
   let page: PageType | null
@@ -34,6 +55,8 @@ const pageTemplate = async ({ params }: { params: Params }) => {
   })
 
   if (!page) return notFound()
+
+  
 
   const { layout, title } = page
   return (

@@ -6,13 +6,27 @@ import { getPayloadHMR } from '@payloadcms/next/utilities'
 import RichText from '@/richtext'
 import { formatDateFromISO } from '@/utils/formatdate'
 import { Prose } from '@/components/Prose'
+import { Metadata } from 'next'
+import Head from 'next/head'
 
-type Props = {
-  params: Promise<{ slug: string }>
+type Params = Promise<{ slug: string }>
 
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  let post: PostType | null
+  const { slug } = await params
+
+
+  post = await queryPostBySlug({
+    slug,
+  })
+  
+  return {
+    title: post.meta?.title,
+    description: post.meta?.description,
+  }
 }
 
-const post = async ({ params }: Props) => {
+const post = async ({ params }: { params: Params }) => {
   const { slug } = await params
   let post: PostType | null
   post = await queryPostBySlug({
@@ -22,8 +36,22 @@ const post = async ({ params }: Props) => {
   const publishedDate = formatDateFromISO(post.publishedAt!)
   const author = (post.authors as User[])[0] || '@uluckydev'
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.meta?.title,
+    description: post.meta?.description,
+    // url: "https://mywebsite.com/article",
+    // Additional properties can go here
+  };
+
   return (
     <div className="max-w-screen-sm mx-auto px-3 md:px-5">
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
+      </Head>
       <article className="mt-10">
         <div className="mb-10">
           <h1 className="text-2xl font-semibold tracking-tighter">{post.title}</h1>
@@ -34,7 +62,7 @@ const post = async ({ params }: Props) => {
           </div>
         </div>
         <Prose>
-        <RichText content={post.content!} />
+          <RichText content={post.content!} />
         </Prose>
       </article>
     </div>
