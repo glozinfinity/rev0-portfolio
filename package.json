@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "rev0-devfolio-template",
   "version": "1.0.0",
-  "description": "A blank template to get started with Payload 3.0",
+  "description": "A developer-friendly portfolio template built with Payload CMS. This template allows for quick customization, responsive design, and efficient content management.",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -15,36 +15,36 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
   },
   "dependencies": {
-    "@payloadcms/db-postgres": "3.0.0-beta.119",
-    "@payloadcms/db-sqlite": "beta",
-    "@payloadcms/email-nodemailer": "3.0.0-beta.119",
-    "@payloadcms/next": "beta",
-    "@payloadcms/plugin-cloud": "beta",
-    "@payloadcms/richtext-lexical": "beta",
-    "@radix-ui/react-slot": "^1.1.0",
-    "@tailwindcss/typography": "^0.5.15",
-    "class-variance-authority": "^0.7.0",
-    "cross-env": "^7.0.3",
-    "graphql": "^16.9.0",
-    "lucide-react": "^0.453.0",
-    "next": "15.0.1",
-    "payload": "beta",
-    "react": "^19.0.0-rc-cae764ce-20241025",
-    "react-dom": "^19.0.0-rc-cae764ce-20241025",
-    "sharp": "0.32.6",
-    "tailwind-merge": "^2.5.4"
+    "@payloadcms/db-postgres": "3.0.0-beta.126",
+    "@payloadcms/db-sqlite": "3.0.0-beta.126",
+    "@payloadcms/email-nodemailer": "3.0.0-beta.126",
+    "@payloadcms/next": "3.0.0-beta.126",
+    "@payloadcms/plugin-cloud": "^3.0.2",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.126 ",
+    "@radix-ui/react-slot": "1.1.0",
+    "@tailwindcss/typography": "0.5.15",
+    "class-variance-authority": "0.7.1-canary.2",
+    "cross-env": "7.0.3",
+    "graphql": "16.9.0",
+    "lucide-react": "0.456.0",
+    "next": "15.0.4-canary.5",
+    "payload": "3.0.0-beta.126 ",
+    "react": "19.0.0-rc-65a56d0e-20241020",
+    "react-dom": "19.0.0-rc-65a56d0e-20241020",
+    "sharp": "0.33.5",
+    "tailwind-merge": "2.5.4"
   },
   "devDependencies": {
-    "@types/node": "^22.8.1",
+    "@types/node": "22.9.0",
     "@types/react": "18.3.12",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "15.0.0-canary.173",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14",
-    "typescript": "5.6.2"
+    "autoprefixer": "10.4.20",
+    "eslint": "9.14.0",
+    "eslint-config-next": "15.0.4-canary.5",
+    "postcss": "8.4.48",
+    "tailwindcss": "3.4.14",
+    "typescript": "5.8.0-dev.20241111"
   },
   "engines": {
-    "node": "^18.20.2 || >=20.9.0"
+    "node": "18.20.2 || >=20.9.0"
   }
 }

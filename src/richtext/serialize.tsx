@@ -159,7 +159,7 @@ export function serializeLexical({ nodes }: Props): JSX.Element {
                 type={fields.linkType === 'internal' ? 'reference' : 'custom'}
                 url={fields.url}
               >
-               a {serializedChildren}
+              {serializedChildren}
               </ContentLink>
             )
           }

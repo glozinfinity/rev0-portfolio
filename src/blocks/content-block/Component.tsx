@@ -12,7 +12,7 @@ export const ContentBlock = (props: Props) => {
   const { content } = props
 
   return (
-    <div className="container my-16">
+    <div className="container mt-5 mb-16 px-3 md:px-5">
       <Prose>
         <RichText content={content as any } />
       </Prose>

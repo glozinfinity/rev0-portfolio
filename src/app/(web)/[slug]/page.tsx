@@ -36,9 +36,9 @@ const pageTemplate = async ({ params }: { params: Params }) => {
 
   const { layout, title } = page
   return (
-    <div className="max-w-screen-sm mx-auto px-3 md:px-5">
+    <div className="max-w-screen-sm mx-auto">
       <article className="mt-10">
-        {slug != 'home' && <h1 className="text-2xl tracking-tighter font-semibold ">{title}</h1>}
+        {slug != 'home' && <h1 className="text-2xl tracking-tighter font-semibold px-3 md:px-5">{title}</h1>}
         {layout && <RenderBlocks blocks={layout} />}
       </article>
     </div>

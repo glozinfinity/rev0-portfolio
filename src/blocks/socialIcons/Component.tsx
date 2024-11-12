@@ -13,7 +13,7 @@ type Props = Extract<Page['layout'], { blockType: 'socialMediaLinks' }>
 const SocialMediaLinks = (props: Props) => {
   const { links } = props
   return (
-    <div className="flex gap-3 mt-5">
+    <div className="flex gap-3 mt-5 px-3 md:px-5">
       {links &&
         (links as LinkData[])?.map((item, index) => {
           const IconComponent = item.platform && icons[item.platform as keyof typeof icons]
