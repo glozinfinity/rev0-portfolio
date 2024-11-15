@@ -46,6 +46,8 @@
    A powerful and flexible developer portfolio template integrated with a content management system (CMS). Built with modern technologies, rev0 Devfolio Template is designed to make it easy for developers to showcase their work and create custom pages using pre-built blocks. This template also includes a blog feature and is fully customizable, allowing you to personalize the design and content.
     <br />
     <br />
+    <a href="https://uluckydev.gumroad.com/l/eigsj">Get Pro and (Deploy for FREE)</a>
+    .
     <a href="https://uluckydev.rev0.site/">View Demo</a>
     .
      <a href="https://github.com/glozinfinity/rev0-portfolio/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
